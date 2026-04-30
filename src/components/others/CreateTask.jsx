@@ -27,7 +27,7 @@ const CreateTask = () => {
                 <div className="w-2/5 flex flex-col items-start">
                     <h3 className="text-gray-300 text-lg mb-1">Description</h3>
                     <textarea className="w-full h-55 border-2 border-gray-400 text-white rounded outline-none px-4 py-3 mb-5" name="" id=""></textarea>
-                    <button className="text-white bg-emerald-600 px-5 py-2 rounded text-lg w-full font-semibold hover:bg-emerald-700 cursor-pointer">Create Task</button>
+                    <button className="text-white bg-emerald-600 px-5 py-2 rounded text-lg w-full font-semibold hover:bg-emerald-700 active:scale-98 transition-scale duration-200 ease-in-out cursor-pointer">Create Task</button>
                 </div>
             </form>
         </div>
