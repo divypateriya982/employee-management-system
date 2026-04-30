@@ -11,13 +11,13 @@ const TaskList = ({data}) => {
                     return <AcceptTask key={idx} data={elem} />
                 }
                 if (elem.newTask) {
-                    return <NewTask key={idx} data={data} />
+                    return <NewTask key={idx} data={elem} />
                 }
                 if (elem.completed) {
-                    return <CompletedTask key={idx} data={data} />
+                    return <CompletedTask key={idx} data={elem} />
                 }
                 if (elem.failed) {
-                    return <FailedTask key={idx} data={data} />
+                    return <FailedTask key={idx} data={elem} />
                 }
             })}
         </div>
