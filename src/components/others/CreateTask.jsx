@@ -1,16 +1,23 @@
 import { useState } from "react";
 
 const CreateTask = () => {
+
     const [taskTitle, setTaskTitle] = useState('');
     const [taskDate, setTaskDate] = useState('');
     const [assignTo, setAssignTo] = useState('');
     const [taskCategory, setTaskCategory] = useState('');
     const [taskDescription, setTaskDescription] = useState('');
+
+    const [task, setTask] = useState({});
+
     return (
         <div className="mt-5 bg-[#1c1c1c] rounded p-5">
             <form
                 onSubmit={(e) => {
                     e.preventDefault();
+                    setTask({taskTitle, taskDate, taskCategory, taskDescription, active: false, newTask: true, completed: false, failed: true});
+
+                    // console.log(task)
                 }}
                 className="w-full flex justify-between items-start flex-wrap">
                 <div className="w-1/2">

@@ -1,7 +1,7 @@
-const Header = ({data}) => {
+const Header = ({data, changeUser}) => {
     const logOut = () => {
         localStorage.setItem('loggedInUser', '');
-        location.reload();
+        changeUser('');
     }
     return (
         <div className="flex items-end justify-between">
