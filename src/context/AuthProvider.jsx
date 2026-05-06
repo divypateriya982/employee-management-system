@@ -4,7 +4,6 @@ import { useEffect } from "react";
 
 export const AuthContext = createContext();
 const AuthProvider = ({children}) => {
-
     const [userData, setUserData] = useState(null);
     useEffect(() => {
         setLocalStorage();
@@ -13,7 +12,7 @@ const AuthProvider = ({children}) => {
     }, [])
     
     return (
-        <AuthContext.Provider value={userData} >
+        <AuthContext.Provider value={[userData, setUserData]} >
             {children}
         </AuthContext.Provider>
     )

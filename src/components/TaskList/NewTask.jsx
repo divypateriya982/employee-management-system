@@ -1,6 +1,8 @@
+import { AuthContext } from "../../context/AuthProvider"
+
 const NewTask = ({data}) => {
     return (
-        <div className="h-full w-75 bg-emerald-900 rounded-2xl shrink-0 py-10 px-8 flex flex-col justify-between items-baseline-last">
+        <div className="h-full w-75 bg-emerald-900 rounded-2xl shrink-0 py-10 px-8 flex flex-col justify-between">
             <div>
                 <div className="flex items-center justify-between">
                     <h2 className="text-sm font-semibold px-3 py-1 bg-red-400 rounded-lg">{data.category}</h2>
